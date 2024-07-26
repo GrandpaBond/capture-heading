@@ -109,6 +109,7 @@ function measure() {
 function logData(tag: string, times: number[], values: number[][]) {
     let pushT: string
     let pushD: string
+    tag = "heading." + tag
     for (let i = 1; i < times.length; i++) {
         pushT = tag + "Times.push(" + times[i] + ")"
         datalogger.log(datalogger.createCV("", pushT))
